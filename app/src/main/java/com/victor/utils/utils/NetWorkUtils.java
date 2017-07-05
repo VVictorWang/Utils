@@ -1,7 +1,25 @@
- /*
-    * 获取给定url值的string型数据
-    * @param myurl
-    * */
+package com.victor.utils.utils;
+
+import android.Manifest;
+import android.content.Context;
+import android.content.pm.PackageManager;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.util.Log;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+public class NetWorkUtils {
+
+
+    /*
+       * 获取给定url值的string型数据
+       * @param myurl
+       * */
     public static String sendRequst(String myurl) {
         HttpURLConnection connection = null;
         StringBuilder builder = new StringBuilder();
@@ -28,7 +46,7 @@
         return builder.toString();
     }
 
-//判断系统网络是否可用
+    //判断系统网络是否可用
     public static boolean isNetWorkAvailabe(Context context) {
         if (context.checkCallingOrSelfPermission(Manifest.permission.INTERNET) != PackageManager.PERMISSION_GRANTED) {
             return false;
@@ -50,3 +68,5 @@
         Log.d("网络:", "网络不可用");
         return false;
     }
+
+}

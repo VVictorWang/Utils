@@ -1,5 +1,18 @@
+package com.victor.utils.utils;
+
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
+import android.os.Environment;
+import android.util.LruCache;
 import android.widget.ImageView;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 /**
  * 自定义的BitmapUtils,实现三级缓存
@@ -23,7 +36,6 @@ public class BitmapUtils {
             ivPic.setImageBitmap(bitmap);
             return;
         }
-
         //本地缓存
         bitmap = mLocalCacheUtils.getBitmapFromLocal(url);
         if (bitmap != null) {
@@ -34,12 +46,10 @@ public class BitmapUtils {
         }
         mNetCacheUtils.getBitmapFromNet(ivPic, url);
     }
-
     /**
      * 三级缓存之网络缓存
      */
     class NetCacheUtils {
-
         //利用本地缓存和内存缓存实现网络缓存
         private LocalCacheUtils mLocalCacheUtils;
         private MemoryCacheUtils mMemoryCacheUtils;
@@ -48,7 +58,6 @@ public class BitmapUtils {
             mLocalCacheUtils = localCacheUtils;
             mMemoryCacheUtils = memoryCacheUtils;
         }
-
         /**
          * 从网络下载图片
          *
@@ -59,7 +68,6 @@ public class BitmapUtils {
             new BitmapTask().execute(myimage, url);//启动AsyncTask
 
         }
-
         /**
          * AsyncTask就是对handler和线程池的封装
          * 第一个泛型:参数类型
@@ -113,7 +121,6 @@ public class BitmapUtils {
                 }
             }
         }
-
         /**
          * 利用httpconnection从网络下载图片
          *
@@ -145,13 +152,12 @@ public class BitmapUtils {
             return null;
         }
     }
-
     /**
      * 三级缓存之本地缓存
      */
 
     class LocalCacheUtils {
-        public static final String CACHE_PATH = Environment.getExternalStorageDirectory().getAbsolutePath() + "/WerbNews";
+        public final String CACHE_PATH = Environment.getExternalStorageDirectory().getAbsolutePath() + "/WerbNews";
 
         /**
          * 从本地读取图片
@@ -197,49 +203,44 @@ public class BitmapUtils {
             }
 
         }
-
-        /**
-         * 三级缓存之内存缓存
-         */
-        class MemoryCacheUtils {
-
-            private LruCache<String, Bitmap> mMemoryCache;
-
-            public MemoryCacheUtils() {
-                long maxMemory = Runtime.getRuntime().maxMemory() / 8;//得到手机最大允许内存的1/8,即超过指定内存,则开始回收
-                //需要传入允许的内存最大值,虚拟机默认内存16M,真机不一定相同
-                mMemoryCache = new LruCache<String, Bitmap>((int) maxMemory) {
-                    //用于计算每个条目的大小
-                    @Override
-                    protected int sizeOf(String key, Bitmap value) {
-                        int byteCount = value.getByteCount();
-                        return byteCount;
-                    }
-                };
-
-            }
-
-            /**
-             * 从内存中读图片
-             *
-             * @param url
-             */
-            public Bitmap getBitmapFromMemory(String url) {
-                Bitmap bitmap = mMemoryCache.get(url);
-                return bitmap;
-
-            }
-
-            /**
-             * 往内存中写图片
-             *
-             * @param url
-             * @param bitmap
-             */
-            public void setBitmapToMemory(String url, Bitmap bitmap) {
-                mMemoryCache.put(url, bitmap);
-            }
-        }
-
-
     }
+    /**
+     * 三级缓存之内存缓存
+     */
+    class MemoryCacheUtils {
+
+        private LruCache<String, Bitmap> mMemoryCache;
+
+        public MemoryCacheUtils() {
+            long maxMemory = Runtime.getRuntime().maxMemory() / 8;//得到手机最大允许内存的1/8,即超过指定内存,则开始回收
+            //需要传入允许的内存最大值,虚拟机默认内存16M,真机不一定相同
+            mMemoryCache = new LruCache<String, Bitmap>((int) maxMemory) {
+                //用于计算每个条目的大小
+                @Override
+                protected int sizeOf(String key, Bitmap value) {
+                    int byteCount = value.getByteCount();
+                    return byteCount;
+                }
+            };
+
+        }
+        /**
+         * 从内存中读图片
+         *
+         * @param url
+         */
+        public Bitmap getBitmapFromMemory(String url) {
+            Bitmap bitmap = mMemoryCache.get(url);
+            return bitmap;
+        }
+        /**
+         * 往内存中写图片
+         * @param url
+         * @param bitmap
+         */
+        public void setBitmapToMemory(String url, Bitmap bitmap) {
+            mMemoryCache.put(url, bitmap);
+        }
+    }
+
+}

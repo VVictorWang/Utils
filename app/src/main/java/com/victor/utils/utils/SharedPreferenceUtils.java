@@ -1,13 +1,17 @@
- 
+package com.victor.utils.utils;
+
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
+import android.util.Log;
+
+public class SharedPreferenceUtils {
     private static final SharedPreferences getSharedPreference(Context context) {
         return PreferenceManager.getDefaultSharedPreferences(context);
     }
- /**
+
+    /**
      * 设置SharedPreference 值,int型
-     *
-     * @param context
-     * @param key
-     * @param value
      */
     public static final boolean putIntValue(Context context, String key,
                                             int value) {
@@ -22,10 +26,6 @@
 
     /**
      * 设置SharedPreference 值,string型
-     *
-     * @param context
-     * @param key
-     * @param value
      */
     public static final boolean putValue(Context context, String key,
                                          String value) {
@@ -41,10 +41,6 @@
 
     /**
      * 设置SharedPreference 值,boolean型
-     *
-     * @param context
-     * @param key
-     * @param b1
      */
 
     public static final void putBooleanValue(Context context, String key,
@@ -53,14 +49,11 @@
         edit.putBoolean(key, bl);
         edit.commit();
     }
-      /**
+
+    /**
      * 设置SharedPreference 值,long型
-     *
-     * @param context
-     * @param key
-     * @param b1
      */
-     public static final boolean putLongValue(Context context, String key,
+    public static final boolean putLongValue(Context context, String key,
                                              Long value) {
         SharedPreferences.Editor editor = getSharedPreference(context).edit();
         editor.putLong(key, value);
@@ -97,7 +90,6 @@
         return getSharedPreference(context).getBoolean(key, false);
     }
 
-    
 
     public static final int getIntValue(Context context, String key) {
         return getSharedPreference(context).getInt(key, 0);
@@ -107,3 +99,4 @@
                                           long default_data) {
         return getSharedPreference(context).getLong(key, default_data);
     }
+}
