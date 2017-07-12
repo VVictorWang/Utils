@@ -120,7 +120,6 @@ public class FastScroller extends LinearLayout {
         currentAnimator.start();
     }
 
-
     //设置此控件绑定的recyclerview
     public void setRecyclerView(RecyclerView recyclerView) {
         this.recyclerView = recyclerView;
