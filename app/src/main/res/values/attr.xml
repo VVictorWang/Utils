@@ -13,4 +13,15 @@
 
     </declare-styleable>
 
+    <declare-styleable name="TopBar">
+        <attr name="title" format="string"/>
+        <attr name="titleTextSize" format="dimension"/>
+        <attr name="titltTextColor" format="color"/>
+        <attr name="leftTextColor" format="color"/>
+        <attr name="leftBackGround" format="reference|color"/>
+        <attr name="leftText" format="string"/>
+        <attr name="rightTextColor" format="color"/>
+        <attr name="rightBackGround" format="reference|color"/>
+        <attr name="rightText" format="string"/>
+    </declare-styleable>
 </resources>
