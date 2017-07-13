@@ -7,19 +7,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.victor.utils.MainActivity">
-    <com.victor.utils.modular.TopBar
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        app:leftText="Hello"
-        app:leftBackGround="@color/colorPrimary"
-        app:rightBackGround="@color/colorAccent"
-        app:rightText="World"
-        app:leftTextColor="@color/white10"
-        app:rightTextColor="#000000"
-        app:title="模板toolbar"
-        app:titltTextColor="#444111"
-        app:titleTextSize="15dp"
-        />
+  <com.victor.utils.view.CircleProgressView
+      android:layout_width="200dp"
+      android:layout_height="200dp"
+
+      />
 <com.victor.utils.view.ShimmerTextView
     android:layout_width="200dp"
     android:layout_height="100dp"
