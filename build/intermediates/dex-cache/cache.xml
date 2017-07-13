@@ -2,58 +2,94 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/home/victor/.android/build-cache/03ed74e574149929a72917c3ae32cf1fb28d2677/output/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/victor/.android/build-cache/7a151c28e295a83c0037ca063d461e54387f38b2/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
-        sha1="952944218ecedea1554a513dec0c14d570642843">
-        <dex dex="/home/victor/AndroidProject/Utils/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_94ebb0126cbaf1281b03038d479a9d71015034e2/classes.dex" />
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="/home/victor/AndroidProject/Utils/app/build/intermediates/pre-dexed/debug/classes_8e6a0f4381f86f260b965dde4dcaee8b650ff9bc.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/victor/.android/build-cache/c6d98b21fb402f0ab148b5cf5782132467cbbce3/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="9935891f23923f39d002087085d9696568a9f657">
-        <dex dex="/home/victor/AndroidProject/Utils/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_dd1b87452f0775c8da42e1690a33df5e7a629680/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="/home/victor/.android/build-cache/65f2cf8010b53f44c25258a50c0b6a7266a7bf4a/output/jars/classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
         sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
-        <dex dex="/home/victor/AndroidProject/Utils/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4fcd1b398e220c541791b7608b477325f5d1c620/classes.dex" />
+        <dex dex="/home/victor/AndroidProject/Utils/app/build/intermediates/pre-dexed/debug/classes_4fcd1b398e220c541791b7608b477325f5d1c620.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/victor/.android/build-cache/d34f989d83860191f1a477f3b6692d79688e5ce0/output/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/victor/.android/build-cache/81174a2d8b6dac9de541cf4b663bd3ab74d1eaef/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
-        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
-        <dex dex="/home/victor/AndroidProject/Utils/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_753d4039971f32cb0f2d12cbbc3bf9038b16c564/classes.dex" />
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/home/victor/AndroidProject/Utils/app/build/intermediates/pre-dexed/debug/classes_c50ac73ad51a886b4c2f2c13ca60130768b15bc2.jar" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
         jar="/home/victor/.android/build-cache/743d785feb21b24ab3c3cb646041da4e78ba35bb/output/jars/classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
         sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
-        <dex dex="/home/victor/AndroidProject/Utils/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_111ed5eac2730de54895c3929e5d6d19c3dc6c50/classes.dex" />
+        <dex dex="/home/victor/AndroidProject/Utils/app/build/intermediates/pre-dexed/debug/classes_111ed5eac2730de54895c3929e5d6d19c3dc6c50.jar" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
+        jar="/home/victor/.android/build-cache/d34f989d83860191f1a477f3b6692d79688e5ce0/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="/home/victor/AndroidProject/Utils/app/build/intermediates/pre-dexed/debug/classes_753d4039971f32cb0f2d12cbbc3bf9038b16c564.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/victor/.android/build-cache/a64d300dee28e03ac17e54e3b6cf53d35c9e28fe/output/jars/classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
         sha1="88246166d5afb106f532f6e6deae683c66b42c89">
-        <dex dex="/home/victor/AndroidProject/Utils/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3827e11b09fd8e880b8db6df9a8865ae6e8a1256/classes.dex" />
+        <dex dex="/home/victor/AndroidProject/Utils/app/build/intermediates/pre-dexed/debug/classes_3827e11b09fd8e880b8db6df9a8865ae6e8a1256.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/victor/.android/build-cache/03ed74e574149929a72917c3ae32cf1fb28d2677/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="/home/victor/AndroidProject/Utils/app/build/intermediates/pre-dexed/debug/classes_94ebb0126cbaf1281b03038d479a9d71015034e2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/victor/.android/build-cache/7f062d7acd6eb414e764cd7ad9c49111c6c2be5a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="/home/victor/AndroidProject/Utils/app/build/intermediates/pre-dexed/debug/classes_c3c10a752707e4c8ea2dd1543dda420ad5b49856.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/victor/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/26.0.0-alpha1/support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="/home/victor/AndroidProject/Utils/app/build/intermediates/pre-dexed/debug/support-annotations-26.0.0-alpha1_6d7e57d44be82c697465b614b88034a1d5847bfa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/victor/.android/build-cache/c6d98b21fb402f0ab148b5cf5782132467cbbce3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="/home/victor/AndroidProject/Utils/app/build/intermediates/pre-dexed/debug/classes_dd1b87452f0775c8da42e1690a33df5e7a629680.jar" />
     </item>
     <item
         is-multidex="true"
@@ -65,49 +101,31 @@
         <dex dex="/home/victor/AndroidProject/Utils/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_77b453f37025897bf98484fa057896e600465d0c/classes.dex" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
         jar="/home/victor/.android/build-cache/e139c3e880236daf47b4b70bf5179cfeeed8566a/output/jars/classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
         sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
-        <dex dex="/home/victor/AndroidProject/Utils/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_56aa19063ac3addabbf01ad800655bc39163a21c/classes.dex" />
+        <dex dex="/home/victor/AndroidProject/Utils/app/build/intermediates/pre-dexed/debug/classes_56aa19063ac3addabbf01ad800655bc39163a21c.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/victor/.android/build-cache/7f062d7acd6eb414e764cd7ad9c49111c6c2be5a/output/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/victor/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
-        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
-        <dex dex="/home/victor/AndroidProject/Utils/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c3c10a752707e4c8ea2dd1543dda420ad5b49856/classes.dex" />
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/home/victor/AndroidProject/Utils/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.2_347da58ba476d9f5e0bddb89d26facc9367c072e.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/victor/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/26.0.0-alpha1/support-annotations-26.0.0-alpha1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="023ee503b631f69511e335a061ea008f8da60f40">
-        <dex dex="/home/victor/AndroidProject/Utils/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-26.0.0-alpha1_6d7e57d44be82c697465b614b88034a1d5847bfa/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="/home/victor/.android/build-cache/7a7d194ff211cb892a87fa11d5aa51e64fd10f1d/output/jars/classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="26.0.0"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/victor/AndroidProject/Utils/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_88d972969538c51496246e7ed8e08aa5e8ecd1d9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/victor/.android/build-cache/7a151c28e295a83c0037ca063d461e54387f38b2/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.0"
-        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
-        <dex dex="/home/victor/AndroidProject/Utils/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8e6a0f4381f86f260b965dde4dcaee8b650ff9bc/classes.dex" />
+        <dex dex="/home/victor/AndroidProject/Utils/app/build/intermediates/pre-dexed/debug/classes_88d972969538c51496246e7ed8e08aa5e8ecd1d9.jar" />
     </item>
     <item
         is-multidex="true"
