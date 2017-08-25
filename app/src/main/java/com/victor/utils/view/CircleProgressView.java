@@ -62,7 +62,6 @@ public class CircleProgressView extends View {
         canvas.drawArc(mRect, 270, mSweepAngle, false, arcPaint);
         String showText = String.valueOf(mSweepValue) + "%";
         canvas.drawText(showText, 0, showText.length(), (float) (cicleXY - showTextsize), cicleXY + (showTextsize / 4), textPaint);
-
     }
 
     public void setSweepValue(float sweepValue) {
