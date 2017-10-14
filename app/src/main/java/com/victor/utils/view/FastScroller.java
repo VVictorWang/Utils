@@ -94,14 +94,16 @@ public class FastScroller extends LinearLayout {
         bubble.setVisibility(VISIBLE);
         if (currentAnimator != null)
             currentAnimator.cancel();
-        currentAnimator = ObjectAnimator.ofFloat(bubble, "alpha", 0f, 1f).setDuration(BUBBLE_ANIMATION_DURATION);
+        currentAnimator = ObjectAnimator.ofFloat(bubble, "alpha", 0f, 1f).setDuration
+                (BUBBLE_ANIMATION_DURATION);
         currentAnimator.start();
     }
 
     private void hideBubble() {
         if (currentAnimator != null)
             currentAnimator.cancel();
-        currentAnimator = ObjectAnimator.ofFloat(bubble, "alpha", 1f, 0f).setDuration(BUBBLE_ANIMATION_DURATION);
+        currentAnimator = ObjectAnimator.ofFloat(bubble, "alpha", 1f, 0f).setDuration
+                (BUBBLE_ANIMATION_DURATION);
         currentAnimator.addListener(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationEnd(Animator animation) {
@@ -136,21 +138,27 @@ public class FastScroller extends LinearLayout {
                 proportion = 1f;
             else
                 proportion = y / (float) height;
-            int targetPos = getValueInRange(0, itemCount - 1, (int) (proportion * (float) itemCount));
-            ((LinearLayoutManager) recyclerView.getLayoutManager()).scrollToPositionWithOffset(targetPos, 0);
-            String bubbleText = ((BubbleTextGetter) recyclerView.getAdapter()).getTextToShowInBubble(targetPos);
+            int targetPos = getValueInRange(0, itemCount - 1, (int) (proportion * (float)
+                    itemCount));
+            ((LinearLayoutManager) recyclerView.getLayoutManager()).scrollToPositionWithOffset
+                    (targetPos, 0);
+            String bubbleText = ((BubbleTextGetter) recyclerView.getAdapter())
+                    .getTextToShowInBubble(targetPos);
             bubble.setText(bubbleText);
         }
     }
+
     private int getValueInRange(int min, int max, int value) {
         int minimum = Math.max(min, value);
         return Math.min(minimum, max);
     }
+
     private void setBubbleAndHandlePosition(float y) {
         int bubbleHeight = bubble.getHeight();
         int handleHeight = handle.getHeight();
         handle.setY(getValueInRange(0, height - handleHeight, (int) (y - handleHeight / 2)));
-        bubble.setY(getValueInRange(0, height - bubbleHeight - handleHeight / 2, (int) (y - bubbleHeight)));
+        bubble.setY(getValueInRange(0, height - bubbleHeight - handleHeight / 2, (int) (y -
+                bubbleHeight)));
     }
 
     private class ScrollListener extends RecyclerView.OnScrollListener {
@@ -170,7 +178,8 @@ public class FastScroller extends LinearLayout {
             else if (lastVisiblePosition == itemCount)
                 position = itemCount;
             else
-                position = (int) (((float) firstVisiblePosition / (((float) itemCount - (float) visibleRange))) * (float) itemCount);
+                position = (int) (((float) firstVisiblePosition / (((float) itemCount - (float)
+                        visibleRange))) * (float) itemCount);
             float proportion = (float) position / (float) itemCount;
             setBubbleAndHandlePosition(height * proportion);
         }
