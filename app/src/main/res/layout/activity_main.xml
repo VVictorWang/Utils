@@ -8,16 +8,10 @@
     android:orientation="vertical"
     tools:context="com.victor.utils.MainActivity">
 
-    <com.victor.utils.view.CircleProgressView
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        app:circle_color="#aa22aa"
-        app:progress_color="#223344"
-        app:current_progress="50"
-        app:circle_width="20dp"
-        app:progress_width="20dp"
-        android:id="@+id/ci"
 
+    <com.victor.utils.view.ThumbUpView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/thumb"
         />
-
 </LinearLayout>

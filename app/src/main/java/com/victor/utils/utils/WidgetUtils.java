@@ -55,7 +55,12 @@ public class WidgetUtils {
      * @param dp
      * @return
      */
-    public static int dpToPx(int dp) {
+    public static int dpToPx(float dp) {
         return (int) (dp * AppUtils.getAppContext().getResources().getDisplayMetrics().density);
+    }
+
+    public static int spTodp(float sp) {
+        float fontScale = AppUtils.getAppContext().getResources().getDisplayMetrics().scaledDensity;
+        return (int) (sp * fontScale * 1.5f);
     }
 }
