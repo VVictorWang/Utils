@@ -2,6 +2,7 @@ package com.victor.utils.view;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -106,6 +107,7 @@ public class CircleProgressView extends View {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         int desiredWidth = 300;
         int desiredHeight = 300;
+
 
         int widthMode = MeasureSpec.getMode(widthMeasureSpec);
         int widthSize = MeasureSpec.getSize(widthMeasureSpec);
